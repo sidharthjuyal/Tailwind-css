@@ -1,1 +1,2 @@
-...
+This directory contains font and text manipulation using tailwind css classes.
+A little bit of information about tailwind css margin class in x and y-axis too.
