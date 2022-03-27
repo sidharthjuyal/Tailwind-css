@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>hover, focus and other states in tailwind</title>
+</head>
+
+<body>
+    <div class="m-4 p-4 w-auto bg-purple-200 h-40 flex justify-center items-center">
+        <button class="px-4 py-2 bg-purple-900 text-white rounded-md
+
+        hover:bg-purple-700
+
+        active:bg-purple-600
+
+        focus:outline-zinc-600  
+        focus:outline-2  
+        ">submit now</button>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    difference between focus and active.
+    example:
+    active state - button click
+    focus state - when you press tab button to jump through elements, that element is in focus state.
+ -->
