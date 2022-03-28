@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>config tailwind.js</title>
+</head>
+
+<body>
+    <div class="m-4 p-4 w-auto bg-purple-200 h-40 flex justify-center items-center text-white xsm:bg-black">
+        <button class="px-4 py-2 bg-purple-900 text-white rounded-md hover:bg-purple-700">submit now</button>
+        <button class="px-4 py-2 text-white rounded-md hover:bg-green-700 bg-green-900 mx-3">submit now</button>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    see input.css for reference
+
+->  why are they written above and below utilities?
+
+    the classes you wrote inside html tags are utility classes, if you want to override utility classes write a class below @tailwind utilities; (.back{...}) and if you want to override a template class (.btn) by writing some more utility classes then write it above @tailwind utilities;
+ -->
