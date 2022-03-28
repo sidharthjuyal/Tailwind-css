@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <title>margin border padding</title>
+</head>
+<body>
+<!-- use of space between -->
+<!-- divide-width gives dividing border to child elements at once -->
+<h1 class="m-4 font-bold text-2xl">Space Between</h1>
+<nav>
+    <ul class="flex space-x-3 space-y-3 divide-x-2">
+        <!-- space-y- property will be applied to all the elements except the first element, to counter it see below-->
+        <li class="ml-3 my-3">Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>More</li>
+    </ul>
+</nav>
+<h1 class="m-4 font-bold text-2xl">Space Between</h1>
+<nav>
+    <ul class="space-x-3 space-y-3 divide-y-2 divide-fuchsia-700">
+        <!-- space-y- property will be applied to all the elements except the first element, to counter it see below-->
+        <li class="ml-3 my-3">Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>More</li>
+    </ul>
+</nav>
+
+
+    <div class="ml-3 mr-3 mt-4 mb-4 border-2 border-blue-800">Margin</div>
+<!-- you can also use mx and my -->
+
+    <div class="mx-3 my-2 border-2 border-blue-800   pl-4 pr-4 pt-2 pb-2">Margin and padding</div>
+<!-- you can also use px and py -->
+
+<div class="mx-3 my-2 border-2 border-blue-800   pl-4 pr-4 pt-2 pb-2  bg-fuchsia-300 rounded-xl text-blue-900 ">bg and border</div>
+    
+</body>
+</html>
