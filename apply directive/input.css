@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+
+.btn{
+    @apply px-4 py-2 bg-purple-900 text-white rounded-md hover:bg-purple-700;
+}
+
+@tailwind utilities;
+
+
+.back{
+    @apply text-black bg-green-300;
+}
+
+/* 
+when you need a template class to use for multiple elements and at the same time override it for some other elements, we use @apply directive
+*/
+
