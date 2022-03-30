@@ -1,0 +1,188 @@
+<!-- go to package.json and see scripts -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/input.css">
+    <title>Best phones</title>
+    <style>
+       @media screen and (max-width:600px)
+       {
+           .navii{
+               z-index:4;
+           }
+           .image{
+               display:none !important;
+               width:0;
+           }
+           .befImg{
+               padding-left: 8px !important;
+           }
+           .ull{
+               display:none !important;
+           }
+           .navbtn{
+               border:2px solid rgb(204, 198, 198);
+               width:30px;
+               border-radius:6px;
+               margin-right:20px;
+               display:flex;
+               justify-content: center;
+               align-items: center;
+           }
+           .navbtn>div{
+               width:70%;
+               height:2px;
+               background-color:rgb(204, 198, 198);
+               position:relative;
+           }
+           .navbtn>div::before{
+               width:100%;
+               height:2px;
+               background-color:rgb(204, 198, 198);
+               position:absolute;
+               content:'';
+               top:-5px;
+               left:0;
+           }
+           .navbtn>div::after{
+               width:100%;
+               height:2px;
+               background-color:rgb(204, 198, 198);
+               position:absolute;
+               content:'';
+               bottom:-5px;
+               left:0;
+           }
+
+           #navcheck{
+               position:absolute;
+               right:20px;
+               width:30px;
+               height:25px;
+               cursor:pointer;
+               z-index:1;
+               opacity:0;
+           }
+
+           .menu{
+               position:absolute;
+               padding-top:36px;
+               width:100%;
+               height:0%;
+               z-index:-1;
+              transform:translateY(-550%);
+              transition: 0.5s;
+           }
+
+           #navcheck:checked~.menu{
+              transform:translateY(0);
+              height:100%;
+           }
+
+           .menu>div>ul{
+              opacity:0;
+           }
+
+           #navcheck:checked~.menu>div>ul{
+              opacity:1;
+              transition:1s;
+           }
+
+           .dropdown>ul>li:hover{
+               color:rgb(201, 193, 193);
+           }
+
+        #navcheck:checked + .navbtn>div{
+    transform: rotate(135deg); 
+    transition:0.5s;
+
+}
+
+    #navcheck:checked:hover + .navbtn>div{
+    transform: rotate(225deg);
+    transition:0.5s;
+
+}
+
+#navcheck:checked + .navbtn>div:after, #navcheck:checked + .navbtn>div:before{
+    transform: rotate(90deg);
+    top:0;  
+    transition:0.5s;
+
+}
+       }
+       @media screen and (min-width:600px)
+       {
+           .navbtn{
+               display:none;
+           }
+           nav input{
+               display:none;
+           }
+           .menu{
+               display:none;
+           }
+       }
+    </style>
+</head>
+
+<body>
+    <nav class="navii bg-purple-600 text-white flex justify-between relative py-3">
+        <p class="flex items-center mx-3 font-extrabold">PhonesMania</p>
+        <ul class="ull px-12 py-4 flex space-x-11 justify-end">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer">Catalog</li>
+            <li class="cursor-pointer">Contact Us</li>
+        </ul>
+        <input type="checkbox"  id="navcheck">
+        <div class="navbtn"><div></div>
+        </div>
+        <div class="menu">
+            <div class="dropdown bg-purple-600 pb-3">
+            <ul class="text-white px-3 navul">
+                <li class=" py-2">Home</li>
+                <li class=" py-2">About</li>
+                <li class=" py-2">Catalog</li>
+                <li class=" py-2">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+    
+    </nav>
+
+
+
+    
+
+
+    <main class="bg-fuchsia-100 flex justify-center">
+        <div class="befImg pt-16 pb-16  pl-12 w-3/5">
+            <div class="text-4xl">
+                The best phones in the town
+            </div>
+            <p class="py-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos harum maiores! Distinctio harum vero
+                eveniet iure, quae adipisci molestias corrupti fugit! Minima architecto repudiandae debitis tempore quas
+                ad molestiae quos voluptas quidem odit.
+            <div class="buttons ">
+                <button
+                    class="bg-purple-800 py-2 px-3 rounded-2xl text-white hover:text-slate-900 hover:bg-fuchsia-400 mt-2 ">
+                    Buy now
+                </button>
+            </div>
+            </p>
+        </div>
+        <div class="flex items-center w-2/5 justify-center image">
+            <img src="image_processing20200424-23052-oqvmt0.png" class="h-60">
+        </div>
+
+    </main>
+</body>
+
+</html>
